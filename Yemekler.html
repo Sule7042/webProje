@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Karaman Mutfağı</title>
+    <style>
+ 
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f5f0;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .kapsayici {
+            width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+  
+        baslik {
+            background-color: #8B0000;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            margin-bottom: 40px;
+            border-radius: 0 0 10px 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        
+        h2 {
+            color: #8B0000;
+            border-bottom: 2px solid #8B0000;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+      
+        .yemek-kategorisi {
+            margin-bottom: 50px;
+        }
+        
+        .yemek-izgara {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 20px;
+        }
+        
+        .yemek-karti {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .yemek-resim {
+            height: 200px;
+            overflow: hidden;
+        }
+        
+        .yemek-resim img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .yemek-bilgi {
+            padding: 20px;
+        }
+        
+        .yemek-bilgi h3 {
+            margin-top: 0;
+            color: #8B0000;
+        }
+        
+        .fiyat {
+            font-weight: bold;
+            color: #228B22;
+            margin: 10px 0;
+        }
+        
+   
+        altbilgi {
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+            background-color: #8B0000;
+            color: white;
+            border-radius: 10px 10px 0 0;
+        }
+    </style>
+</head>
+<body  background="karaman-kalesi.jpg">
+    <baslik>
+        <div class="kapsayici">
+            <h1>Karaman Mutfağı</h1>
+            <p>Bin yıllık lezzet geleneği</p>
+        </div>
+    </baslik>
+    
+    <div class="kapsayici">
+        <section class="yemek-kategorisi">
+            <h2>Yöresel Lezzetler</h2>
+            <div class="yemek-izgara">
+                <div class="yemek-karti">
+                    <div class="yemek-resim">
+                        <img src="c:\Users\WIN10_22H2_X64\Desktop\Yeni klasör (2)\Etliekmek.jpg" alt="Etli Ekmek">
+                    </div>
+                    <div class="yemek-bilgi">
+                        <h3>Etli Ekmek</h3>
+                        <p>Karaman'ın dünyaca ünlü ince uzun etli ekmeği, özel baharatlarla hazırlanan kıymanın ince açılmış hamur üzerinde pişirilmesiyle yapılır.</p>
+            Yemeden gitmeyin!
+                        <div class="fiyat">Ortalama Fiyat: 70-100 TL</div>
+                    <a href="https://www.google.com/maps/place/Keskinler+Etli+Ekmek/@37.1864436,33.2178457,17z/data=!3m1!4b1!4m6!3m5!1s0x14d98d03bcf181f3:0x4bdfae0e118c7804!8m2!3d37.1864436!4d33.2178457!16s%2Fg%2F113jdyb1j?entry=ttu&g_ep=EgoyMDI1MDYxNS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Haritada Gör</a>
+                    </div>
+                </div>
+                
+                <div class="yemek-karti">
+                    <div class="yemek-resim">
+                        <img src="c:\Users\WIN10_22H2_X64\Desktop\Yeni klasör (2)\calla.jpeg" alt="Calla">
+                    </div>
+                    <div class="yemek-bilgi">
+                        <h3>Calla</h3>
+                        <p>Karaman'a özgü bu özel yemek, bulgur, et ve çeşitli baharatlarla hazırlanır. Özellikle düğünlerde servis edilen geleneksel bir lezzettir.</p>
+                        <div class="fiyat">Ortalama Fiyat: 60-90 TL</div>
+                                <a href="https://www.google.com/maps/place/Merkez+Lokantasi/@37.1802613,33.2135715,19.79z/data=!4m6!3m5!1s0x14d98daaaf3564bf:0x138792f3370a142e!8m2!3d37.1802501!4d33.2143861!16s%2Fg%2F11hzxkrsfs?entry=ttu&g_ep=EgoyMDI1MDYxNS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Haritada Gör</a>
+                    </div>
+                </div>
+                
+                <div class="yemek-karti">
+                    <div class="yemek-resim">
+                        <img src="c:\Users\WIN10_22H2_X64\Desktop\Yeni klasör (2)\batırık.jpeg" alt="Batırık">
+                    </div>
+                    <div class="yemek-bilgi">
+                        <h3>Batırık</h3>
+                        <p>Yaz aylarının vazgeçilmez serinletici yemeği. İnce bulgur, domates, salatalık, maydanoz ve özel sosla hazırlanır.</p>
+                        Genellikle kişiler kendileri yapar.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <altbilgi>
+    
+            <p>Karaman'ın bin yıllık lezzet kültürünü yaşatıyoruz</p>
+        </div>
+    </altbilgi>
+</body>
+</html>

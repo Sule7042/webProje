@@ -1,0 +1,154 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;  
+}
+
+.nav-container {
+    top: 5px;
+    background-color: #235396;
+    padding: 0px 0;
+    width: 60%;
+    text-align: right;
+    margin-top: 10px;
+    position: relative;
+}
+
+/* MENÜ ELEMANLARI */
+.menu {
+    display: flex;
+    justify-content: left;
+    list-style: none;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    top: 20px;
+    position: absolute;
+}
+
+.menu li {
+    position: relative;
+    margin: 0 10px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+    transition: opacity 0.3s;
+    top: 20px;
+    background-color: #235396;
+}
+
+.menu ul li a.active,
+.menu li a:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+    background-color: rgb(132, 188, 231);
+    transition: 250ms all;
+    transition: 0.3s ease;
+}
+
+/* Alt menü */
+#Aktivite-content,
+#Ulaşım-content,
+#Yemek-content {
+    position: absolute;
+    z-index: 1;
+    display:none;
+    margin-top: 0;
+    padding-top: 10px;
+    left: 0;
+    top: 100%;
+      transform: translateX(-10%);
+}
+#Yemek-content{
+
+    transform: translateX(-17%);
+}
+.Aktivite-li:hover #Aktivite-content,
+.Ulaşım-li:hover #Ulaşım-content,
+.Yemek-li:hover #Yemek-content{
+    display: block;
+    transition: 0.4s ease;
+}
+
+
+.menu li ul::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+}
+
+.menu li:hover ul {
+    display: block;
+}
+
+.menu li:not(:last-child)::after {
+    content: "|";
+    color: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    right: -10px;
+    top: 45%;
+    transform: translateY(-50%);
+}
+
+.logo {
+    position: relative;
+    top: 3px;
+}
+
+.banner {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(99, 104, 109);
+    font-size: large;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-main {
+    margin-left: auto;
+    margin-right: 40px;
+    background-color: #235396;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 40px;
+}
+
+.tbox-search {
+    float: left;
+    background: none;
+    border: none;
+    outline: none;
+    color: whitesmoke;
+    font-size: 16px;
+}
+
+.btn-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    float: right;
+    height: 20px;
+    width: 40px;
+}

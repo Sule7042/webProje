@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#iletisim {
+    position: relative;
+    background: url(karaman.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    padding: 50px;
+    height: 100vh; /* Ekran yüksekliği kadar olsun */
+    text-align: center;
+}
+#h3iletisim{
+    color: aliceblue;
+}
+#iletisimopak {
+    background: rgba(255, 255, 255, 0.2);
+    width: 400px;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(19, 27, 244)
+}
+input, textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    right: auto;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

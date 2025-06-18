@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>İletişim</title>
+    <link rel="stylesheet" href="iletişim.css">
+</head>
+<body>
+    <div id="iletisim">
+        <div id="iletisimopak">
+            <div id="adresmopak"></div>
+          <div id="mesajDurumu"></div>
+  <form id="iletisimForm">
+    <input type="text" placeholder="Ad Soyad"><br>
+    <input type="email" placeholder="Email Adresiniz"><br>
+    <input type="text" placeholder="Telefon Numarası"><br>
+    <input type="text" placeholder="Konu Başlığı"><br>
+    <textarea placeholder="Mesaj Giriniz"></textarea><br>
+    <button type="submit">Gönder</button>
+    
+     <div id="adres"></div>
+   <b> <h4> Adres : </h4>
+    <p> Alişahane Mah.</p>
+    <p> Turgut Özal Caddesi</p>
+    <p> No:2/C</p>
+    <p> 0532 654 78 96</p>
+    <p> Email :
+        Karamanınrehberi@Karamanınrehberi.com</p></b>
+    </div>
+    <div id="mesajDurumu"></div>
+    
+</form>
+            
+        </div>
+    </div>
+    <script>
+    const form = document.getElementById("iletisimForm");
+    const mesajDiv = document.getElementById("mesajDurumu");
+
+    form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        mesajDiv.innerText = "Mesaj başarıyla gönderildi!";
+        mesajDiv.style.color = "black";
+        mesajDiv.style.marginTop = "10px";
+        mesajDiv.style.fontSize= "25px"
+
+        
+        form.reset();
+    });
+</script>
+
+</body>
+</html>
